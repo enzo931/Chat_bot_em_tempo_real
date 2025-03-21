@@ -32,7 +32,7 @@ Para iniciar o servidor, use o comando:
 npm start
 Isso vai iniciar o servidor na porta 3000, e você poderá acessar o chat em http://localhost:3000.
 
-Como Funciona 🔍
+## Como Funciona 🔍
 O usuário digita seu nome no campo de entrada ao iniciar o chat.
 Uma vez que o nome for preenchido, o chat será liberado e as mensagens podem ser enviadas.
 As mensagens, juntamente com o nome do usuário e o horário de envio, são compartilhadas com todos os participantes do chat em tempo real, usando Socket.io.
