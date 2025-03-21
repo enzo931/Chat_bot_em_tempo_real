@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #0a192f, #1b2c4d); /* Gradiente de fundo */
+    color: #fff;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.chat-container {
+    width: 400px;
+    background-color: rgba(16, 32, 64, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: transform 0.3s ease;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#nomeContainer input {
+    padding: 10px;
+    font-size: 16px;
+    width: 60%;
+    border: none;
+    border-radius: 5px;
+    background-color: #2a3d54;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #64ffda;
+    color: #0a192f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #56d1b8;
+}
+
+.chat-box {
+    height: 300px;
+    overflow-y: auto;
+    background-color: #1b2c4d;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.chat-box div {
+    padding: 8px;
+    background-color: #2a3d54;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.chat-box div:hover {
+    transform: scale(1.05);
+}
+
+input {
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    width: 80%;
+    background-color: #112240;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #64ffda;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
