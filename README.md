@@ -32,17 +32,6 @@ Para iniciar o servidor, use o comando:
 npm start
 Isso vai iniciar o servidor na porta 3000, e você poderá acessar o chat em http://localhost:3000.
 
-Estrutura do Projeto 📂
-
-chat-em-tempo-real/
-│
-├── public/
-│   ├── index.html      # Página principal com o chat
-│   ├── script.js       # Lógica de envio e recebimento de mensagens
-│   └── styles.css      # Estilo do chat
-│
-├── server.js           # Arquivo principal do servidor Node.js
-└── package.json        # Dependências do projeto
 Como Funciona 🔍
 O usuário digita seu nome no campo de entrada ao iniciar o chat.
 Uma vez que o nome for preenchido, o chat será liberado e as mensagens podem ser enviadas.
